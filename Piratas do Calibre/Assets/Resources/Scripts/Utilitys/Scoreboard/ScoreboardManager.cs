@@ -10,6 +10,7 @@ public class ScoreboardManager : MonoBehaviour {
     private int changeCounter = 0;
 
 	void Start () {
+
         SetScore("Dudu", "Kills", 9);
         SetScore("Dudu", "Deaths", 10);
         SetScore("Samurai", "Kills", 80);
