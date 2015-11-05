@@ -46,39 +46,40 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resources\Scripts\Character\FirstPersonController.cs" />
-     <Compile Include="Assets\Resources\Scripts\Character\HeadBob.cs" />
-     <Compile Include="Assets\Resources\Scripts\Character\Health.cs" />
-     <Compile Include="Assets\Resources\Scripts\Character\MouseLook.cs" />
-     <Compile Include="Assets\Resources\Scripts\Character\RigidbodyFirstPersonController.cs" />
-     <Compile Include="Assets\Resources\Scripts\Objects\Bullet\Bullet.cs" />
-     <Compile Include="Assets\Resources\Scripts\Objects\Bullet\Spawn_Bullet.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\ActivateTrigger.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\AutoMobileShaderSwitch.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\AutoMoveAndRotate.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\CameraRefocus.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\CurveControlledBob.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\DragRigidbody.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\DynamicShadowSettings.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\FOVKick.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\FPSCounter.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\FollowTarget.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\ForcedReset.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\LerpControlledBob.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\ObjectResetter.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\ParticleSystemDestroyer.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\PlatformSpecificContent.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\SimpleActivatorMenu.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\SimpleMouseRotator.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\SmoothFollow.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\TimedObjectActivator.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\TimedObjectDestructor.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\WaypointCircuit.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\FPS\WaypointProgressTracker.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\Menus\MenuManager.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\Scoreboard\PlayerScoreList.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\Scoreboard\ScoreboardManager.cs" />
-     <Compile Include="Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\FirstPersonController.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\HeadBob.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\Health.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\MouseLook.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Character\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Objects\Bullet\Bullet.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Objects\Bullet\Spawn_Bullet.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\BancoConnection\Connection.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\ActivateTrigger.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\CameraRefocus.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\CurveControlledBob.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\DragRigidbody.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\FOVKick.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\FPSCounter.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\FollowTarget.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\ForcedReset.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\LerpControlledBob.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\ObjectResetter.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\SmoothFollow.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\WaypointCircuit.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuLoginManager.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\PlayerScoreList.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScoreboardManager.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -87,6 +88,12 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="MySql.Data">
+ <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/MySql.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>C:/Users/W7/Documents/GitHub/Piratas-do-Calibre/Piratas do Calibre/Assets/Assets/MySql/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
