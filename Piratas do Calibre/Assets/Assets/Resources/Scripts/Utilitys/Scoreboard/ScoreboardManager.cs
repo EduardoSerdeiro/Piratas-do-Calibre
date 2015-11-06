@@ -13,6 +13,7 @@ public class ScoreboardManager : MonoBehaviour {
 
         SetScore("Dudu", "Kills", 9);
         SetScore("Dudu", "Deaths", 10);
+        SetScore("Dudu", "Gold", 100);
         SetScore("Samurai", "Kills", 80);
 
 	}

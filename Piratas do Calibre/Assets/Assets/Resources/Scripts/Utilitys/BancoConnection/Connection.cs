@@ -40,6 +40,8 @@ public class Connection : MonoBehaviour {
             logado = true;
             
         }
+
+       
         return logado;
        
         

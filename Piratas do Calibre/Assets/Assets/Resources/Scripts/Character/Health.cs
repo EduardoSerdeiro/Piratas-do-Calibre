@@ -2,22 +2,21 @@
 using System.Collections;
 public class Health : MonoBehaviour
 {
-
     [SerializeField]
     private float maxHealth;
 
-    private static float currentHealth;
+    [SerializeField]private float currentHealth;
 
     void Start()
     {
         currentHealth = maxHealth;
+        
     }
 
 
     void Update()
     {
-
-
+        
 
     }
 
@@ -36,6 +35,17 @@ public class Health : MonoBehaviour
         return currentHealth;
     }
 
-    
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Bullet")
+        {
+            TakeDamage(Bullet.damageBullet);
+            Debug.Log("Recebeu dano da bala");
 
+        }
+
+   
+    }
+
+   
 }

@@ -12,7 +12,6 @@ public class Spawn_Bullet : MonoBehaviour {
     [Header("Arma")]
     public int QuantiMuni = 5;
     public int muniArma = 1;
-
     private float timeCurrShoot;
 
 	void Start () {

@@ -83,12 +83,10 @@ public class MenuLoginManager : MonoBehaviour {
     public void clickAutent()
     {
 
-
         if (conn.Logar(inputLogin.text, inputSenha.text))
         {
             texStatus.text = "Acesso Permitido";
             Application.LoadLevel("MainScene");
-
         }
         else
         {

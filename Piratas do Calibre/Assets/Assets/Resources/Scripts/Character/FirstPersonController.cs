@@ -253,5 +253,28 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+        public float GetWalkSpeed()
+        {
+            return m_WalkSpeed;
+        }
+        public float SetWalkSpeed(float speed)
+        {
+            m_WalkSpeed = speed;
+
+            return m_WalkSpeed;
+        }
+
+
+        public float GetRunSpeed()
+        {
+            return m_RunSpeed;
+        }
+        public float SetRunSpeed(float speed)
+        {
+            m_RunSpeed = speed;
+
+            return m_RunSpeed;
+        }
     }
 }
