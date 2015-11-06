@@ -23,7 +23,8 @@ public class Agachar : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            characterController.height = escalaPlayer;
+           // characterController.height = escalaPlayer;
+            characterController.height = Mathf.Lerp(characterController.height, escalaPlayer, 10 * Time.deltaTime);
             GetComponent<FirstPersonController>().SetWalkSpeed(speedAgachado);
             GetComponent<FirstPersonController>().SetRunSpeed(speedAgachado);
             //FPS_Controlador.m_UseFovKick = false;
@@ -31,7 +32,8 @@ public class Agachar : MonoBehaviour
         }
         else if (!Input.GetKey(KeyCode.LeftControl))
         {
-            characterController.height = escalaPlayer * 2;
+           // characterController.height = escalaPlayer * 2;
+            characterController.height = Mathf.Lerp(characterController.height, escalaPlayer*2, 10 * Time.deltaTime);
             GetComponent<FirstPersonController>().SetWalkSpeed(speedAgachado*2);
             GetComponent<FirstPersonController>().SetRunSpeed(speedAgachado* 4);
         }
