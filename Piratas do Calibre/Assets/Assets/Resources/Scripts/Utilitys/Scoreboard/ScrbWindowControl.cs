@@ -3,12 +3,13 @@ using System.Collections;
 
 public class ScrbWindowControl : MonoBehaviour
 {
-
+ 
     [SerializeField]private GameObject scoreBoard;
 
     void Start()
     {
         scoreBoard.SetActive(false);
+        
     }
 
 	void Update () {
@@ -17,7 +18,10 @@ public class ScrbWindowControl : MonoBehaviour
         {
             scoreBoard.SetActive(!scoreBoard.activeSelf);
         }
-
+        else if (Input.GetKeyUp(KeyCode.Tab))
+        {
+            scoreBoard.SetActive(!scoreBoard.activeSelf);
+        }
 	}
 
 }

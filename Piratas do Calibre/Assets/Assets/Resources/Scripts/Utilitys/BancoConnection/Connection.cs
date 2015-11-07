@@ -7,15 +7,25 @@ public class Connection : MonoBehaviour {
     public MySqlParameter par;
     public MySqlCommand command;
     public MySqlDataReader reader;
+    MySqlConnection conexao;
 
     public MySqlConnection Conexao()
     {
          //private string StrConn = "Server= 127.0.0.1; Port=3306; Database=PdC; Uid= root; Pwd=admin";
         string StrConnection = "Server= 127.0.0.1; Port=3306; Database=PdC; User id= root; Password=admin; Pooling = false;";
-         MySqlConnection conexao = new MySqlConnection(StrConnection);
+        conexao = new MySqlConnection(StrConnection);
          conexao.Open();
 
          return conexao;
+    }
+
+    public void FecharConexao()
+    {
+        if (conexao != null )
+        {
+                conexao.Close();
+                conexao.Dispose();
+        }
     }
 
     public bool Logar(string nickname, string senha)
@@ -40,11 +50,12 @@ public class Connection : MonoBehaviour {
             logado = true;
             
         }
+        FecharConexao();
+        return logado;
+
+        
 
        
-        return logado;
-       
-        
        // command = new System.Data.SqlClient.SqlCommand(sql, conexão());
     }
 }
