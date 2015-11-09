@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Resources\Scripts\Character\FirstPersonController.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\HeadBob.cs" />
+     <Compile Include="Assets\Resources\Scripts\Character\Health.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\MouseLook.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Resources\Scripts\Objects\Bullet\Bullet.cs" />
