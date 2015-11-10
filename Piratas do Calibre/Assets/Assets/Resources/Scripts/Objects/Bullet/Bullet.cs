@@ -5,6 +5,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour
 {
     Health health;
+    private Rigidbody rigidbody;
 
     [SerializeField]
     private float speed;
@@ -12,9 +13,7 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private float maxSegLife = 3.0f;
 
-    public static int damageBullet = 50;
-    // private float Life;
-    private Rigidbody rigidbody;
+   public static int damageBullet = 34;
 
     void Start()
     {

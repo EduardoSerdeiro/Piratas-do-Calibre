@@ -3,18 +3,26 @@ using System.Collections;
 
 public class Spawn_Bullet : MonoBehaviour {
 
+    [Header("Audio Shoot")]
+    private AudioSource audioShoot;
+    public AudioClip shoot;
+
+
+  [Header("Arma")]
     [SerializeField]private GameObject bulletPrefab;
+
+  [SerializeField]private int QuantiMuni = 5;
+  [SerializeField]private int muniArma = 1;
 
     [SerializeField]
     private float cooldown;
- 
-
-    [Header("Arma")]
-    public int QuantiMuni = 5;
-    public int muniArma = 1;
     private float timeCurrShoot;
 
+   
+
+
 	void Start () {
+        audioShoot = GetComponent<AudioSource>();
         timeCurrShoot = cooldown;
 	}
 	
@@ -22,11 +30,12 @@ public class Spawn_Bullet : MonoBehaviour {
 
         timeCurrShoot += Time.fixedDeltaTime;
 
-        if (Input.GetButtonDown("Fire1") && timeCurrShoot >= cooldown && muniArma > 0)
+        if (Input.GetMouseButtonDown(0) && timeCurrShoot >= cooldown && muniArma > 0)
         {
             Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
             timeCurrShoot = 0;
             muniArma--;
+            audioShoot.PlayOneShot(shoot);
         }
 
         if (Input.GetKeyDown(KeyCode.R) && QuantiMuni>0 && muniArma< 1)

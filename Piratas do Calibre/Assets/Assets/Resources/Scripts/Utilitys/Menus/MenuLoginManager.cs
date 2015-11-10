@@ -73,6 +73,8 @@ public class MenuLoginManager : MonoBehaviour {
         inputSenha.gameObject.SetActive(false);
         botaoAutent.gameObject.SetActive(false);
         botaoVoltar.gameObject.SetActive(false);
+
+        Application.OpenURL("http://google.com");
     }
 
     public void clickSair()
@@ -86,7 +88,7 @@ public class MenuLoginManager : MonoBehaviour {
         if (conn.Logar(inputLogin.text, inputSenha.text))
         {
             texStatus.text = "Acesso Permitido";
-            Application.LoadLevel("MainScene");
+            Application.LoadLevel("MenuPartida");
         }
         else
         {
@@ -97,7 +99,9 @@ public class MenuLoginManager : MonoBehaviour {
 
     public void clickVoltar()
     {
+        texStatus.text = "";
         Inicio();
+
     }
 
 }

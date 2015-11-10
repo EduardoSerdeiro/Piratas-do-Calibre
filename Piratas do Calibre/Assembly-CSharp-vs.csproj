@@ -79,9 +79,11 @@
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\FPS\WaypointProgressTracker.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuConfigManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuLoginManager.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Menus\MenuPartiManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\PlayerScoreList.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScoreboardManager.cs" />
      <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\Scoreboard\ScrbWindowControl.cs" />
+     <Compile Include="Assets\Assets\Resources\Scripts\Utilitys\TimerGame.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\DemoBoxesGui.cs" />

@@ -12,11 +12,20 @@ public class Connection : MonoBehaviour {
     public MySqlConnection Conexao()
     {
          //private string StrConn = "Server= 127.0.0.1; Port=3306; Database=PdC; Uid= root; Pwd=admin";
-        string StrConnection = "Server= 127.0.0.1; Port=3306; Database=PdC; User id= root; Password=admin; Pooling = false;";
-        conexao = new MySqlConnection(StrConnection);
-         conexao.Open();
+        try
+        {
+            string StrConnection = "Server= 127.0.0.1; Port=3306; Database=PdC; User id= root; Password=admin; Pooling = false;";
+            conexao = new MySqlConnection(StrConnection);
+            conexao.Open();
 
-         return conexao;
+            return conexao;  
+        }
+        catch(UnityException e)
+        {
+            Debug.Log("Erro:" + e);
+            return conexao;
+        }
+
     }
 
     public void FecharConexao()
@@ -32,23 +41,24 @@ public class Connection : MonoBehaviour {
     {
         Conexao();
         bool logado = false;
-        string sql = "select id, nickname, senha from Usuario where nickname= @nickname and senha= @senha";
+        string sql = "select id, nickname, senha from Usuario where nickname= @nickname ";
         command = new MySqlCommand(sql, Conexao());
 
         par = new MySqlParameter("@nickname", nickname);
         par.MySqlDbType = MySqlDbType.VarChar;
         command.Parameters.Add(par);
 
-        par = new MySqlParameter("@senha", senha);
-        par.MySqlDbType = MySqlDbType.VarChar;
-        command.Parameters.Add(par);
-
         reader = command.ExecuteReader();
 
+        string senhaUsuario;
         if (reader.Read())
         {
-            logado = true;
-            
+            senhaUsuario = reader.GetValue(reader.GetOrdinal("SENHA")).ToString();
+            if (senhaUsuario.Equals(senha))
+            {
+                logado = true;
+            }
+
         }
         FecharConexao();
         return logado;
